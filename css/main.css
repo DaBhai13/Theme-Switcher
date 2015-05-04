@@ -1,0 +1,176 @@
+/* Base Styles */
+
+body{
+	padding: 0;
+    margin: 0;
+    line-height: 1.4;
+    font-size: 16px;
+	color: #fff;
+    background: #472d33;
+    font-family: 'Muli', sans-serif;
+    -webkit-transition: all .5s;
+            transition: all .5s;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Themes */
+
+.perl{
+    color: #222;
+    background: #f0f8ff;
+}
+
+.perl header, .perl .button:hover{
+    background: #ededed;
+}
+
+.perl .button{
+    background: #fff;
+}
+
+.royal{
+    background: #4169E1;
+}
+
+.royal header, .royal .button:hover{
+    background: #3454b4;
+}
+
+.royal .button{
+    background: #6687e7;
+}
+
+.lime{
+    background: #32CD32;
+}
+
+.lime header, .lime .button:hover{
+    background: #28a428;
+}
+
+.lime .button{
+    background: #5ad75a;
+}
+
+/* Header Styles */
+
+header{
+    max-width: 100%;
+    height: 80px;
+    padding: 5px;
+    background: #382428;
+}
+
+.logo{
+    float: left;
+    font-family: 'Monda', sans-serif;
+    font-size: 1.75em;
+    margin-left: 4%;
+    font-weight: 400;
+}
+
+nav{
+    margin-right: 2%;
+}
+
+.nav-bar{
+    padding: 0;
+	margin: 0;
+    float: right;
+	-webkit-transition: max-height 0.5s;
+	transition: max-height 0.5s;
+}
+
+.nav-bar li{
+    display: inline-block;
+    padding: 30px 10px;
+}
+
+.nav-bar a{
+	padding: 5px;
+    text-transform: uppercase;
+    font-size: .8em;
+    letter-spacing:1px;
+}
+
+/* Section Styles */
+
+.container{
+    max-width: 85%;
+    margin: 4em auto 0 auto;
+    padding: .625em .625em 2em .625em;
+    text-align: center;
+}
+
+.main-heading{
+    font-family: 'Monda', sans-serif;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+/* Button Styles */
+
+.button{
+	padding: 20px 25px;
+    margin: 2em .3em;
+	background: #ba4662;
+    font-size: .9em;
+	letter-spacing: 1px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	-webkit-transition: all .3s ease-in-out;
+	        transition: all .3s ease-in-out;
+}
+
+.button:hover{
+	background:#ae3c58;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 800px) {
+    .button{
+        margin: .9em .3em;
+        font-size: .8em;
+    }
+    .page-content{
+       margin-bottom: 1.75em;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+     .nav-bar li{
+        padding: 30px 5px;
+    }
+    .nav-bar a{
+        padding: 0;
+    }
+    .container{
+        margin-top: 1.25em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .main-heading{
+        font-size: 2.25em;
+    }
+    .page-content{
+       font-size: .9em;
+    }
+    .logo{
+        margin-left: 1%;
+        font-size: 1.35em;
+        padding: .55em inherit;
+    }
+    nav{
+        margin-right: 1%;
+    }
+    .nav-bar a{
+        font-size: .7em;
+    }
+}
